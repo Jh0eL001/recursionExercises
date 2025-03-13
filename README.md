@@ -12,8 +12,10 @@ Welcome to my repository where I practice recursion in Java. Below are the detai
 In this repository, I solve different recursion problems using Java. The exercises range from basic to more advanced recursion topics.
 
 ## Exercises
-- `00.factorial.java` - Implementation of factorial using recursion.
-- `00.RecursiveMult.java` - Implementation of multiplication using recursion.
+- [00. Basic Example of Recursive Factorial](000-factorial)
+- [00. Basic Example of Recursive Mult with Sums](00-recursive_power)
+- [01. Recursive Power](01-recursive_power)
+- [02. Recursive Prime Number](02-is_prime)
 - More exercises will be added here as I progress.
 
 ## How to Use
