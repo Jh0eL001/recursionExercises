@@ -71,4 +71,4 @@ $$
 \text{recursivePow}(2, 2) \rightarrow 2 \times 2 = 4
 $$
 ## Whiteboard Thinking
-- [Practice Exercises PDF](01_recursive_power.jpg) - The Image contains the point of view of the author about the resolution of the exercise.
+- [Whiteboard Approach](01_recursive_power.jpg) - The Image contains the point of view of the author about the resolution of the exercise.
