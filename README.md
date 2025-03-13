@@ -13,7 +13,7 @@ In this repository, I solve different recursion problems using Java. The exercis
 
 ## Exercises
 - [00. Basic Example of Recursive Factorial](000-factorial)
-- [00. Basic Example of Recursive Mult with Sums](00-recursive_power)
+- [00. Basic Example of Recursive Mult with Sums](00-recursive_sum)
 - [01. Recursive Power](01-recursive_power)
 - [02. Recursive Prime Number](02-is_prime)
 - More exercises will be added here as I progress.
@@ -24,4 +24,4 @@ In this repository, I solve different recursion problems using Java. The exercis
 3. Run the Java files to see the recursion in action!
 
 ## Links
-- [Practice Exercises PDF](PracticeExercises.pdf) - The PDF containing all the exercises and their explanations.
+- [Practice Exercises PDF](PracticeExercises.pdf) - The PDF containing all the exercises instructions. 
