@@ -10,9 +10,9 @@ public class PrimeFactors {
       return;
     } else if (num % factor == 0) {
       System.out.println(factor + " "); // Print the factor.
-      primeFact(num / factor, factor); // Continue with the same factor.
+      primeFact(num / factor, factor); // Continue with the same factor. First Recursive CALL (num / factor)
     } else {
-      primeFact(num, factor + 1);
+      primeFact(num, factor + 1); // Second Recursive CALL with (factor + 1)
     }
   }
 
