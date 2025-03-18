@@ -6,7 +6,7 @@ This Java program computes the power of a number `a` raised to an exponent `b` u
 
 ## Program Explanation
 
-### Base Case for Exponent 1:
+### Base Case for Exponent 1
 
 When `b = 1`, the method returns the base `a` because any number raised to the power of 1 is the number itself.  
 This is the simplest case that stops the recursion.
@@ -15,7 +15,7 @@ $$
 a^1 = a
 $$
 
-### Recursive Case:
+### Recursive Case
 
 For values of `b > 1`, the function recursively calls `recursivePow(a, b - 1)` and multiplies the result by `a`.  
 This gradually reduces `b`  by 1 with each recursive call, eventually reaching the base case.
@@ -26,7 +26,7 @@ $$
 a^b = a \times \text{recursivePow}(a, b - 1)
 $$
 
-#### Example:
+#### Example
 
 For `3^4`, the function works as:
 
@@ -56,13 +56,16 @@ It also handles cases where the user enters invalid data (non-integer values) us
 
 Let’s walk through an example: `recursivePow(2, 3)`.
 
-### First call: `recursivePow(2, 3)`:
+### First call: `recursivePow(2, 3)`
+
 Since `b != 1`, it calls `recursivePow(2, 2)` and multiplies the result by `2`.
 
-### Second call: `recursivePow(2, 2)`:
+### Second call: `recursivePow(2, 2)`
+
 Since `b != 1`, it calls `recursivePow(2, 1)` and multiplies the result by `2`.
 
-### Third call: `recursivePow(2, 1)`:
+### Third call: `recursivePow(2, 1)`
+
 Since `b = 1`$ b = 1 $, the function returns `2`.
 
 Now the recursion starts unwinding:
@@ -70,5 +73,7 @@ Now the recursion starts unwinding:
 $$
 \text{recursivePow}(2, 2) \rightarrow 2 \times 2 = 4
 $$
+
 ## Whiteboard Thinking
+
 - ![Whiteboard Approach](01_recursive_power.jpg) - The Image contains the point of view of the author about the resolution of the exercise.
