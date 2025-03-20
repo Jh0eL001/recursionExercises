@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class Factorial {
 
-  public static int fact(int num) {
+  public static long fact(int num) {
     /*
      * For positive numbers only, including zero.
      */
-    int result;
+    long result;
     if (num == 0) {
       result = 1;
     } else {
