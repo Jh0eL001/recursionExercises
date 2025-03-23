@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Random;
 
 /*
  * 05. Design a Sequence class, that represents a sequence of numbers.
@@ -115,9 +114,9 @@ public class Sequence {
       return;
     }
     // choose a random pivot
-    int pivotIndex = new Random().nextInt(highIndex - lowIndex) + lowIndex;
-    int pivot = numbers[pivotIndex];
-    swap(numbers, pivotIndex, highIndex);
+    //int pivotIndex = new Random().nextInt(highIndex - lowIndex) + lowIndex;
+    int pivot = numbers[highIndex];
+    //swap(numbers, pivotIndex, highIndex);
 
     int leftPointer = partition(numbers, lowIndex, highIndex, pivot);
 

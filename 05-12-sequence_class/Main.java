@@ -16,14 +16,14 @@ public class Main {
     for (int i = 0; i < randomNumbers2.length; i++) {
         randomNumbers2[i] = random.nextInt(100);
     }
-
+    int[] fixedList = new int[]{3, 2, 5, 0, 1, 8, 7, 6, 9, 4};
     // Crear objetos Sequence con los arrays aleatorios
     Sequence sequence = new Sequence(randomNumbers1);
-    Sequence sequence2 = new Sequence(randomNumbers2);
+    Sequence sequence2 = new Sequence(fixedList);
 
     // Imprimir los arrays generados aleatoriamente
-    System.out.println("\n-> Secuencia 1 (antes de ordenar):");
-    sequence.printArray(sequence.numbers);
+    //System.out.println("\n-> Secuencia 1 (antes de ordenar):");
+    //sequence.printArray(sequence.numbers);
 
     System.out.println("\n-> Secuencia 2 (antes de ordenar):");
     sequence2.printArray(sequence2.numbers);
@@ -41,8 +41,8 @@ public class Main {
     // ---------- Prueba Ejercicio 8.1 ------------------------------------------------ //
     System.out.println("\nQuickSort:");
     // hacemos una copia del objeto sequence 2 para no modificar los valores directamente.
-    int[] quickSortNumbers = Arrays.copyOf(sequence2.numbers, sequence.numbers.length);
-    sequence.quickSort(quickSortNumbers);
-    sequence.printArray(quickSortNumbers);
+    int[] quickSortNumbers = Arrays.copyOf(sequence2.numbers, sequence2.numbers.length);
+    sequence2.quickSort(quickSortNumbers);
+    sequence2.printArray(quickSortNumbers);
   }
 }
