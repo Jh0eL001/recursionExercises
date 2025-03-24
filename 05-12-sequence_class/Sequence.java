@@ -104,19 +104,21 @@ public class Sequence {
     return result;
   }
 
-  // overload the quickSort method to pass-in only the array and not all the parameters
-  public void quickSort(int[] numbers){
+  // overload the quickSort method to pass-in only the array and not all the
+  // parameters
+  public void quickSort(int[] numbers) {
     quickSort(numbers, 0, numbers.length - 1);
   }
+
   // 8.2 Otro método para ordenar una lista (QuickSort)
   public void quickSort(int[] numbers, int lowIndex, int highIndex) {
     if (lowIndex >= highIndex) {
       return;
     }
     // choose a random pivot
-    //int pivotIndex = new Random().nextInt(highIndex - lowIndex) + lowIndex;
+    // int pivotIndex = new Random().nextInt(highIndex - lowIndex) + lowIndex;
     int pivot = numbers[highIndex];
-    //swap(numbers, pivotIndex, highIndex);
+    // swap(numbers, pivotIndex, highIndex);
 
     int leftPointer = partition(numbers, lowIndex, highIndex, pivot);
 
@@ -159,8 +161,19 @@ public class Sequence {
     }
   }
 
+  // 09. Metodo para buscar un elemento en una lista. (Linear Search)
+  public int linearSearch(int[] numbers, int pointer, int element) {
+    if (pointer >= numbers.length) {
+      return -1; // elemento No encontrado
+    }
+    if (numbers[pointer] == element) {
+      return pointer; // Se encontró el elemento
+    }
+    return linearSearch(numbers, pointer + 1, element); // Llamada recursiva
+  }
+
   // Método para imprimir un array
   public void printArray(int[] arr) {
-    System.out.println(Arrays.toString(arr));
+    System.out.println("-> " + Arrays.toString(arr) + "\n");
   }
 }
